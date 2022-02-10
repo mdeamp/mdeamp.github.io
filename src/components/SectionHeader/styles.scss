@@ -14,5 +14,9 @@
   .underscore {
     color: #0ea383;
     font-weight: 300;
+
+    &.invert {
+      color: #8730af;
+    }
   }
 }
