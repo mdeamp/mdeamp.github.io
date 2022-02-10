@@ -2,16 +2,7 @@ import React, { useEffect, useState } from 'react';
 import './styles.scss';
 
 import SectionHeader from '../../components/SectionHeader';
-import {
-  FaAngular,
-  FaClipboardCheck,
-  FaFileAlt,
-  FaFileCode,
-  FaKeyboard,
-  FaNodeJs,
-  FaQuestionCircle,
-  FaReact,
-} from 'react-icons/fa';
+import { FaAngular, FaClipboardCheck, FaFileAlt, FaFileCode, FaKeyboard, FaNodeJs, FaReact } from 'react-icons/fa';
 import ScrollAnimation from 'react-animate-on-scroll';
 import SectionNav from '../../components/SectionNav';
 
@@ -57,10 +48,11 @@ const AboutSection = React.forwardRef((_props, ref) => {
       setIsMobile(true);
     }
   }, []);
+
   return (
     <div className="about-container" ref={ref}>
       <ScrollAnimation animateOnce={true} animateIn="animate__bounceInLeft" duration={2}>
-        <SectionHeader title="Who am I?" icon={<FaQuestionCircle />} />
+        <SectionHeader title="Who am I?" />
       </ScrollAnimation>
       <ScrollAnimation animateOnce={true} animateIn="animate__fadeIn" duration={2} delay={500}>
         <div className="about-me">
@@ -75,8 +67,8 @@ const AboutSection = React.forwardRef((_props, ref) => {
               <div className="about-item col-12 col-md-4">
                 <ScrollAnimation
                   animateOnce={true}
-                  animateIn="animate__bounceInLeft"
-                  duration={isMobile ? 0 : 1.5}
+                  animateIn={isMobile ? 'animate__fadeIn' : 'animate__bounceInLeft'}
+                  duration={isMobile ? 1 : 1.5}
                   delay={isMobile ? 0 : 1500}
                 >
                   <FaNodeJs className="about-item-icon" />
@@ -87,8 +79,8 @@ const AboutSection = React.forwardRef((_props, ref) => {
               <div className="about-item col-12 col-md-4">
                 <ScrollAnimation
                   animateOnce={true}
-                  animateIn="animate__bounceInUp"
-                  duration={isMobile ? 0 : 1.5}
+                  animateIn={isMobile ? 'animate__fadeIn' : 'animate__bounceInUp'}
+                  duration={isMobile ? 1 : 1.5}
                   delay={isMobile ? 0 : 1500}
                 >
                   <FaKeyboard className="about-item-icon" />
@@ -102,8 +94,8 @@ const AboutSection = React.forwardRef((_props, ref) => {
               <div className="about-item col-12 col-md-4">
                 <ScrollAnimation
                   animateOnce={true}
-                  animateIn="animate__bounceInRight"
-                  duration={isMobile ? 0 : 1.5}
+                  animateIn={isMobile ? 'animate__fadeIn' : 'animate__bounceInRight'}
+                  duration={isMobile ? 1 : 1.5}
                   delay={isMobile ? 0 : 1500}
                 >
                   <FaFileCode className="about-item-icon" />
