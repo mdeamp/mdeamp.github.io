@@ -7,6 +7,23 @@ $gradient-color-2: #17353f;
   min-height: 100vh;
 }
 
+.about-me {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+
+  .about-me-img {
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    background-image: url('/assets/images/mdeamf.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+}
+
 .about-content {
   padding: 20px;
 
