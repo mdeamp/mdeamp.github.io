@@ -13,6 +13,7 @@ import {
   FaReact,
 } from 'react-icons/fa';
 import ScrollAnimation from 'react-animate-on-scroll';
+import SectionNav from '../../components/SectionNav';
 
 const AboutSection = React.forwardRef((_props, ref) => {
   const [isMobile, setIsMobile] = useState(false);
@@ -156,6 +157,10 @@ const AboutSection = React.forwardRef((_props, ref) => {
         </div>
       </ScrollAnimation>
 
+      <div className="about-next">
+        <SectionNav text="Other information" onClick={_props.scrollToInfo} />
+      </div>
+
       <svg width="0" height="0">
         <linearGradient id="about-item-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
           <stop offset="0%" style={{ stopColor: '#0ea383', stopOpacity: 1 }} />
@@ -166,6 +171,6 @@ const AboutSection = React.forwardRef((_props, ref) => {
   );
 });
 
-AboutSection.displayName = 'AboutPage';
+AboutSection.displayName = 'AboutSection';
 
 export default AboutSection;

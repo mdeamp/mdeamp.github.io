@@ -35,7 +35,7 @@ const MauSection = ({ scrollToAbout }) => {
         <p className="text">
           Systems Analyst and Software Engineer<span className="underscore">_</span>
         </p>
-        <SectionNav text="More about me" onClick={scrollToAbout} />
+        <SectionNav text="More about me" onClick={scrollToAbout} light />
       </div>
 
       <div className="mau-icons">{icons.map((icon) => icon)}</div>
