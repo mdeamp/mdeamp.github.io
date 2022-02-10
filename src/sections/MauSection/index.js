@@ -1,7 +1,8 @@
 import './styles.scss';
 
-import { FaAngular, FaArrowDown, FaBitbucket, FaGitAlt, FaJs, FaNodeJs, FaNpm, FaReact, FaYarn } from 'react-icons/fa';
+import { FaAngular, FaBitbucket, FaGitAlt, FaJs, FaNodeJs, FaNpm, FaReact, FaYarn } from 'react-icons/fa';
 import { useEffect, useState } from 'react';
+import SectionNav from '../../components/SectionNav';
 
 const MauSection = ({ scrollToAbout }) => {
   const [icons, setIcons] = useState([]);
@@ -34,9 +35,7 @@ const MauSection = ({ scrollToAbout }) => {
         <p className="text">
           Systems Analyst and Software Engineer<span className="underscore">_</span>
         </p>
-        <button type="button" className="more btn btn-outline-light" onClick={scrollToAbout}>
-          More about me <FaArrowDown className="arrow" />
-        </button>
+        <SectionNav text="More about me" onClick={scrollToAbout} />
       </div>
 
       <div className="mau-icons">{icons.map((icon) => icon)}</div>
