@@ -1,5 +1,6 @@
 .about-container {
   padding: 20px;
+  border-top: 1px solid #0ea383;
   background-color: #f8f8f8;
   min-height: 100vh;
 }
@@ -46,8 +47,6 @@
 }
 
 .about-technologies {
-  min-height: 350px;
-
   .list-group-item.active {
     background-color: #0ea383;
     border-color: #0ea383;

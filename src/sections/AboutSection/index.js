@@ -110,7 +110,7 @@ const AboutSection = React.forwardRef((_props, ref) => {
         <div className="about-technologies">
           <div className="container">
             <div className="row">
-              <div className="col-12 col-lg-4">
+              <div className="col-12 col-md-4">
                 <div className="list-group">
                   {technologies.map((t, i) => {
                     return (
@@ -129,7 +129,7 @@ const AboutSection = React.forwardRef((_props, ref) => {
                   })}
                 </div>
               </div>
-              <div className="col-12 col-lg-8">
+              <div className="col-12 col-md-8">
                 <div className="about-technologies-selected">
                   <div className="container">
                     <div className="row">
