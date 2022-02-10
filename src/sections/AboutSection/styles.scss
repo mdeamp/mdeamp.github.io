@@ -1,0 +1,30 @@
+$gradient-color-1: #3e0a42;
+$gradient-color-2: #17353f;
+
+.about-container {
+  padding: 20px;
+  background-color: #f8f8f8;
+  min-height: 100vh;
+}
+
+.about-content {
+  padding: 20px;
+
+  .about-item {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 10px;
+
+    .about-item-icon {
+      font-size: 128px;
+    }
+
+    .about-item-icon>:nth-child(2) {
+      font-size: 128px;
+      fill: url(#about-item-gradient);
+    }
+  }
+}

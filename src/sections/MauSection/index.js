@@ -1,9 +1,9 @@
-import './MauSection.scss';
+import './styles.scss';
 
 import { FaAngular, FaArrowDown, FaBitbucket, FaGitAlt, FaJs, FaNodeJs, FaNpm, FaReact, FaYarn } from 'react-icons/fa';
 import { useEffect, useState } from 'react';
 
-export default function MauSection() {
+const MauSection = ({ scrollToAbout }) => {
   const [icons, setIcons] = useState([]);
   useEffect(() => {
     const icons = [
@@ -34,7 +34,7 @@ export default function MauSection() {
         <p className="text">
           Systems Analyst and Software Engineer<span className="underscore">_</span>
         </p>
-        <button type="button" className="more btn btn-outline-light">
+        <button type="button" className="more btn btn-outline-light" onClick={scrollToAbout}>
           More about me <FaArrowDown className="arrow" />
         </button>
       </div>
@@ -42,4 +42,6 @@ export default function MauSection() {
       <div className="mau-icons">{icons.map((icon) => icon)}</div>
     </div>
   );
-}
+};
+
+export default MauSection;

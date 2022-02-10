@@ -1,11 +1,11 @@
 import './App.scss';
 
-import MauSection from './sections/MauSection';
+import Sections from './sections';
 
 function App() {
   return (
     <div>
-      <MauSection />
+      <Sections />
     </div>
   );
 }
