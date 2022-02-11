@@ -9,6 +9,7 @@ import SectionNav from '../../components/SectionNav';
 const AboutSection = React.forwardRef((_props, ref) => {
   const [isMobile, setIsMobile] = useState(false);
   const [activeTechnology, setActiveTechnology] = useState(0);
+  const [changingTechnology, setChangingTechnology] = useState(0);
 
   const technologies = [
     {
@@ -42,6 +43,16 @@ const AboutSection = React.forwardRef((_props, ref) => {
         'Applying the best practices of Git/GitFlow, CI/CD Pipelines, SOLID Principles, Clean Architecture, always focusing on high-quality results.',
     },
   ];
+
+  const changeActiveTechnology = (i) => {
+    setChangingTechnology(true);
+    setTimeout(() => {
+      setActiveTechnology(i);
+      setTimeout(() => {
+        setChangingTechnology(false);
+      }, 300);
+    }, 200);
+  };
 
   useEffect(() => {
     if (window.innerWidth < 768) {
@@ -120,7 +131,7 @@ const AboutSection = React.forwardRef((_props, ref) => {
                         className={`about-technologies-item list-group-item list-group-item-action ${
                           i === activeTechnology ? 'active' : ''
                         }`}
-                        onClick={() => setActiveTechnology(i)}
+                        onClick={() => changeActiveTechnology(i)}
                       >
                         <span className="about-technologies-item-icon">{t.icon}</span>
                         <span>{t.name}</span>
@@ -132,7 +143,7 @@ const AboutSection = React.forwardRef((_props, ref) => {
               <div className="col-12 col-md-8">
                 <div className="about-technologies-selected">
                   <div className="container">
-                    <div className="row">
+                    <div className={`row ${changingTechnology ? 'hide' : 'show'}`}>
                       <div className="col-3">
                         <span className="about-technologies-selected-icon">{technologies[activeTechnology].icon}</span>
                       </div>

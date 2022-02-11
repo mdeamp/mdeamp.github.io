@@ -81,6 +81,16 @@
       margin-top: 20px;
     }
 
+    .hide {
+      transition: opacity 0.2s ease-in;
+      opacity: 0;
+    }
+
+    .show {
+      transition: opacity 0.2s ease-in;
+      opacity: 1;
+    }
+
     &-icon {
       display: flex;
       align-items: center;
