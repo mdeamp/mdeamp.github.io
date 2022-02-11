@@ -40,7 +40,7 @@ const AboutSection = React.forwardRef((_props, ref) => {
       name: 'Best Practices',
       icon: <FaClipboardCheck />,
       description:
-        'Applying the best practices of Git/GitFlow, CI/CD Pipelines, SOLID Principles, Clean Architecture, always focusing on high-quality results.',
+        'Applying the best practices of Git/GitFlow, CI/CD Pipelines, SOLID Principles, Clean Architecture, Relational and Non-Relation Databases, always focusing on high-quality results.',
     },
   ];
 
