@@ -45,12 +45,10 @@ const AboutSection = React.forwardRef((_props, ref) => {
   ];
 
   const changeActiveTechnology = (i) => {
+    if (i === activeTechnology) return;
     setChangingTechnology(true);
     setTimeout(() => {
       setActiveTechnology(i);
-      setTimeout(() => {
-        setChangingTechnology(false);
-      }, 300);
     }, 200);
   };
 
@@ -59,6 +57,12 @@ const AboutSection = React.forwardRef((_props, ref) => {
       setIsMobile(true);
     }
   }, []);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setChangingTechnology(false);
+    }, 300);
+  }, [activeTechnology]);
 
   return (
     <div className="about-container" ref={ref}>
