@@ -149,7 +149,7 @@ const AboutSection = React.forwardRef((_props, ref) => {
         </div>
       </ScrollAnimation>
 
-      <div className="about-next">
+      <div className="section-next">
         <SectionNav text="Other information" onClick={_props.scrollToInfo} />
       </div>
 
