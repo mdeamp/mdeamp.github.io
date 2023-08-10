@@ -5,13 +5,13 @@ import ScrollAnimation from 'react-animate-on-scroll';
 import { FaGithubSquare, FaLinkedin } from 'react-icons/fa';
 
 const ContactSection = React.forwardRef((_props, ref) => {
-  const openLinkedIn = () => window.open('https://linkedin.com/in/mdeamf', '_blank');
-  const openGitHub = () => window.open('https://github.com/mdeamf', '_blank');
+  const openLinkedIn = () => window.open('https://linkedin.com/in/mdeamp', '_blank');
+  const openGitHub = () => window.open('https://github.com/mdeamp', '_blank');
 
   return (
     <div className="contact-container" ref={ref}>
       <h4>Here&apos;s where you can find me! :)</h4>
-      <h6>(mostly as &quot;mdeamf&quot;)</h6>
+      <h6>(mostly as &quot;mdeamp&quot;)</h6>
       <div className="container">
         <div className="row">
           <div className="col-12 col-md-6">
@@ -31,7 +31,7 @@ const ContactSection = React.forwardRef((_props, ref) => {
         </div>
       </div>
 
-      <div className="contact-footer">Made with ❤️, by mdeamf, 2022</div>
+      <div className="contact-footer">Made with ❤️, by mdeamp, 2023</div>
     </div>
   );
 });
