@@ -8,7 +8,7 @@ pnpm-debug.log*
 lerna-debug.log*
 
 node_modules
-# dist # Force upload for GitHub Pages
+# dist # Force upload for GitHub Pages. Not a very good practice, but it's due to the free limitations of Actions.
 dist-ssr
 *.local
 

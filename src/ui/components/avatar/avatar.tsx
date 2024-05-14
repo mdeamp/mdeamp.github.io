@@ -8,6 +8,11 @@ export type AvatarProps = {
 
 export const Avatar = memo(({ rounded = true }: AvatarProps) => {
   return (
-    <img src="/img/mauricio-paulino.png" className={classes('mr-4 max-h-full max-w-full', rounded && 'rounded-full')} />
+    <button className="h-8 w-8">
+      <img
+        src="/img/mauricio-paulino.png"
+        className={classes('mr-4 max-h-full max-w-full', rounded && 'rounded-full')}
+      />
+    </button>
   );
 });
