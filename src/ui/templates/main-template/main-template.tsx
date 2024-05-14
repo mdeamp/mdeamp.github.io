@@ -30,8 +30,8 @@ export const MainTemplate = () => {
   );
 
   return (
-    <div className="bg-[url('/img/main-bg.jpg')] bg-cover bg-fixed bg-right">
-      <div className="flex min-h-screen flex-col items-center">
+    <div className="bg-[url('/img/main-bg.jpg')] bg-cover bg-right bg-no-repeat">
+      <div className="flex min-h-screen flex-col items-center pb-24">
         <TerminalContainer commands={commands} />
 
         <div className="mt-4 flex w-3/4 flex-wrap items-center justify-center font-['Poppins']">

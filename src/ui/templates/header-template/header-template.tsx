@@ -26,11 +26,14 @@ export const HeaderTemplate = () => {
   return (
     <div
       className={classes(
-        "fixed top-0 flex h-16 w-full items-center justify-center py-2 font-['Poppins'] text-xl font-bold",
+        "fixed top-0 flex h-16 w-full items-center justify-center py-2 font-['Poppins'] text-xl font-bold transition-all",
         scrolled && 'bg-neutral-800',
       )}
     >
-      <Avatar rounded />
+      <button onClick={scrollToTop}>
+        <Avatar rounded />
+      </button>
+
       <button className="ml-2 text-white" onClick={scrollToTop}>
         mdeamp
       </button>

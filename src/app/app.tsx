@@ -1,5 +1,4 @@
-import { MainTemplate, HeaderTemplate } from '@ui/templates';
-import { FooterTemplate } from 'src/ui/templates/footer-template/footer-template';
+import { FooterTemplate, HeaderTemplate, MainTemplate } from '@ui/templates';
 
 export function App() {
   return (
