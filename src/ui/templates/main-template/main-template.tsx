@@ -18,11 +18,11 @@ export const MainTemplate = () => {
 
   const buttons = useMemo(
     () => [
-      { icon: 'tool', label: 'skills', href: githubUrl('mdeamp') },
-      { icon: 'book', label: 'learning', href: githubUrl('mdeamp/learning') },
-      { icon: 'award', label: 'badges', href: githubUrl('mdeamp/badges') },
-      { icon: 'star', label: 'projects', href: githubUrl('mdeamp/projects') },
-      { icon: 'github', label: 'github', href: githubUrl('') },
+      { icon: 'tool', label: 'skills', href: githubUrl('README.md') },
+      { icon: 'book', label: 'learning', href: githubUrl('learning/README.md') },
+      { icon: 'award', label: 'badges', href: githubUrl('badges/README.md') },
+      { icon: 'star', label: 'projects', href: githubUrl('projects/README.md') },
+      { icon: 'github', label: 'github', href: 'https://github.com/mdeamp' },
       { icon: 'linkedin', label: 'linkedin', href: 'https://linkedin.com/in/mdeamp' },
       { icon: 'pen', label: 'dev blog', href: 'https://dev.to/mdeamp' },
     ],
