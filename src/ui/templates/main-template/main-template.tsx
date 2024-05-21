@@ -20,7 +20,6 @@ export const MainTemplate = () => {
     () => [
       { icon: 'tool', label: 'skills', href: githubUrl('README.md') },
       { icon: 'book', label: 'learning', href: githubUrl('learning/README.md') },
-      { icon: 'award', label: 'badges', href: githubUrl('badges/README.md') },
       { icon: 'star', label: 'projects', href: githubUrl('projects/README.md') },
       { icon: 'github', label: 'github', href: 'https://github.com/mdeamp' },
       { icon: 'linkedin', label: 'linkedin', href: 'https://linkedin.com/in/mdeamp' },
