@@ -10,7 +10,7 @@ export const Avatar = memo(({ rounded = true }: AvatarProps) => {
   return (
     <button className="h-8 w-8">
       <img
-        src="/img/mauricio-paulino.png"
+        src="/img/mdeamp2025.jpg"
         className={classes('mr-4 max-h-full max-w-full', rounded && 'rounded-full')}
       />
     </button>
